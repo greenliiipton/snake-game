@@ -1,10 +1,12 @@
+
 <idea-plugin>
     <id>com.greenliiipton.snake-game-plugin</id>
     <name>Snake Game</name>
     <vendor>greenliiipton team</vendor>
 
     <description><![CDATA[
-        Play Snake directly inside PyCharm. Includes a game tool window and IDE utilities.
+        Play Snake directly inside PyCharm.
+        Includes a game tool window and IDE utilities.
     ]]></description>
 
     <depends>com.intellij.modules.platform</depends>
@@ -22,8 +24,20 @@
                 class="com.greenliiipton.snakegame.HelloWorldAction"
                 text="Hello World"
                 description="Show a greeting from the Snake Game plugin">
+
             <add-to-group group-id="MainToolbar" anchor="last"/>
             <add-to-group group-id="EditorPopupMenu" anchor="last"/>
         </action>
+
+        <action
+                id="com.greenliiipton.snakegame.LineCounterAction"
+                class="com.greenliiipton.snakegame.LineCounterAction"
+                text="Count Lines (Snake)"
+                description="Count code, comments and empty lines">
+
+            <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+            <add-to-group group-id="ToolsMenu" anchor="last"/>
+        </action>
     </actions>
+
 </idea-plugin>
