@@ -16,6 +16,9 @@
                 id="Snake Game"
                 anchor="right"
                 factoryClass="com.greenliiipton.snakegame.SnakeToolWindowFactory"/>
+        <statusBarWidgetFactory
+    id="SnakeCoderTimer"
+    implementation="com.greenliiipton.snakegame.CoderTimerWidgetFactory"/>
     </extensions>
 
     <actions>
